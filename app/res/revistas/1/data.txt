@@ -1,0 +1,1 @@
+12 %%% Titulo de la revista %%% Descripcion de la revista %%% fecha de publicacion %%%

@@ -1,0 +1,392 @@
+
+/*background-color: #d47b7f; ackground-color: #fbf98a;  #1dace3  #7dd984 */
+
+/*---- VAriables ----*/
+
+
+
+/* ---- DOM -----*/
+
+body{
+	background-color: #fff;
+	font-family: 'Roboto';
+  color: #ecf0f1;
+}
+
+br{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* ----- Efectos ----*/
+.sombra{
+  -webkit-box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
+   filter: shadow(color=#999999, direction=135, strength=2);
+}
+
+
+/* ---- BEGIN CODE ------ */
+
+  .container{
+  	width: 1200px;
+  	margin: 0 auto;
+  	position: relative;
+  }
+
+  /* ---- BEGIN TOPE ------ */
+
+  .header{
+  	background-color: #34495e;
+  	width: 100%;
+  	height: 150px;
+  	z-index: 1;
+    margin-bottom: 5px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+  }
+  
+  #textheader{
+  	color: #ecf0f1;
+  	font-size: 45px;
+  	margin:  0px 0px;
+    border-radius: 20px; 
+    position: relative;
+    left: 200px;
+    top: 20px;
+  }
+
+  .sub{
+    font-size: 20px;
+  }
+
+  #logocont{
+    position: absolute;
+    left: 0;
+  }
+
+  #logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 25px;
+    margin: 0px 30px ;
+
+  }
+
+
+  .nav{
+   
+    background-color: #ecf0f1;
+    width: 100%;
+    color: #34495e;
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 1px;
+    display: table;
+  }
+  .acceso{
+    display: inline ,fixed;
+    width: 200px;
+    margin: 0px 5px;
+    height: 30px;
+    padding: 12px 30px;
+    border-radius: 2px;
+    text-align:center;
+    text-decoration:none;
+    color: #34495e;
+  }
+  .separador{
+    background-color: #34495e;
+    height: 30px;
+    width: 5px;
+    padding: 5px 2px;
+    border-radius: 2px;
+
+  }
+
+  .acceso:hover, .acceso:active {
+    background-color: #3498db ;
+    color: #ecf0f1;
+  }
+
+  /* ---- END TOPE ------ */
+  
+  .store{
+  	height: 550px;
+  	width: 100%;
+  	z-index: 0;
+    background-image: url("../pics/wood4.jpg");
+    background-image: url("../pics/shards_pattern.jpg");   
+  	background-size: 100%;
+  	overflow: hidden;
+  	position: relative;
+    margin-bottom: 20px;
+    border-radius: 1px;
+  }
+
+
+  .shelf{
+  	width: 840px;
+  	height: 550px;
+  	z-index: 2;
+  	padding: 60px 0px;
+  	position: relative;
+  	display: inline-block;
+  	text-align:center;
+  }
+
+
+  /* BEGIN -  INFORMACION SOBRE REVISTA */
+
+    .info{
+    	top: 0;
+    	left: 840px; 
+    	width: 360px;
+    	height: 550px;
+    	position: absolute;
+    	z-index: 3;
+    	background-color: #3498db;
+    	opacity: 0.8;
+      color: #34495e;
+
+    }
+
+    .interinfo{
+        padding: 50px 30px;
+        display: none;
+    }
+
+    #titulo{
+      font-size: 20px;
+    }
+
+    #descrip{
+
+    }
+
+    #botones{
+      display: inline-block;
+      margin: 0 auto;
+
+    }
+
+    #ver , #descargar{
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      margin: 50px 15px;
+      border-radius: 3px;
+      background: #e7473e;
+      color:#fff;
+      font-size: 1em;
+      text-align:center;
+      text-decoration:none;
+
+    }
+  
+  /* END - INFORMACION SOBRE REVISTA*/
+
+
+  /* revistas*/
+  .caja {
+      display: inline-block;
+      width: 25px;
+      height: 350px;
+      margin: 30px;
+      cursor: pointer;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      font-family: Tahoma, Arial;
+      -webkit-perspective: 1000px;
+         -moz-perspective: 1000px;
+          -ms-perspective: 1000px;
+           -o-perspective: 1000px;
+              perspective: 1000px;       
+    }
+
+  .item{
+  	width: 25px;
+      height: 350px;
+      transform-style: preserve-3d;
+      transition: transform .8s;
+  }
+
+
+
+  .lomo{
+  	width: 25px;
+      height:350px;
+      background-color: #3498db;
+    	position: absolute;
+    	top: 0;
+    	border-radius: 3px;
+    	box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+   	     -webkit-transform: translateZ(50px);
+           -moz-transform: translateZ(50px);
+            -ms-transform: translateZ(50px);
+             -o-transform: translateZ(5px);
+                transform: translateZ(50px);
+        -webkit-transition: all .8s;
+           -moz-transition: all .8s;
+            -ms-transition: all .8s;
+             -o-transition: all .8s;
+                transition: all .8s;
+
+  }
+
+  .portada{
+  	width: 200px;
+      height: 350px;
+      background-color: #00ad72;
+    	position: absolute;
+    	top: 0;
+    	text-align: left;
+    	border-radius: 5px;
+   	  font-size: 12px;
+    	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    	box-shadow: none;
+   	    -webkit-transform: rotateY(90deg) translateZ(-75px) translateX(50px); 
+          -moz-transform: rotateY(90deg) translateZ(-75px) translateX(50px);
+          -ms-transform: rotateY(90deg) translateZ(-75px) translateX(50px);
+          -o-transform: rotateY(90deg) translateZ(-75px) translateX(50px);
+          transform: rotateY(90deg) translateZ(-75px) translateX(50px);
+          -webkit-transition: all .8s;
+          -moz-transition: all .8s;
+          -ms-transition: all .8s;
+          -o-transition: all .8s;
+           transition: all .8s;
+  }
+
+  .cajah {
+      width: 200px;
+      height: 350px;
+  }
+
+  .cajah .item {
+  	width: 100px;
+      height: 350px;
+      -webkit-transform: translateZ(75px) rotateY(-90deg) ;
+         -moz-transform: translateZ(75px) rotateY(-90deg);
+          -ms-transform: translateZ(75px) rotateY(-90deg);
+             -o-transform: translateZ(75px) rotateY(-90deg);
+                transform: translateZ(75px) rotateY(-90deg);
+      }
+   
+        /*.item:hover .lomo {
+          box-shadow: none;
+        }
+   
+        .item:hover .portada {
+          box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+          border-radius: 3px;
+        }*/
+
+
+  .center{
+  	  display: inline-block;
+  	  margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+  }
+
+  .general{
+    width: 100%;
+    height: 500px;
+    background-color: #34495e;
+    border-radius: 3px;  
+  }
+  .interg{
+  padding: 40px 80px;
+
+  }
+  #titulog{
+    font-size: 20px;
+  }
+
+
+  /* --- BEGIN VENTANA MODAL ---*/
+
+    .overlay{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index:100;
+            opacity: .7;
+            -moz-opacity: 0.7;
+            filter: alpha(opacity=70);
+        }
+     
+        /* estilo para la ventana modal */
+    .modal {
+            display: none;
+            position: absolute;
+            top: 5%;
+            left: 15%;
+            width: 70%;
+            height: 85%;
+            padding: 16px;
+            background: #fff;
+            color: #333;
+            z-index: 101;
+            overflow: auto;
+    }
+
+  /* --- END VENTANA MODAL ---*/
+
+  .imgp{
+    width: 100%;
+    position: absolute;
+    height: 350px;
+    background-repeat: no-repeat;
+  }
+
+/* --- END CODE ----*/
+
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 75%;
+    box-sizing: border-box;
+    z-index: 10;
+    -moz-transform: translate(-80%, 0%);
+    -webkit-transform: translate(-80%, 0%);
+    transform: translate(-80%, 0%);
+}
+ 
+#modal-background {
+    display: none;
+    position: fixed;
+    background: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.styled{
+    width: 80%;
+    min-height: 600px;
+    min-width: 80%;
+    overflow: auto;
+    background: #fff;
+    padding: 12px 14px;
+    border: 1px solid;
+    border-color: #aaa #999 #888;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 3px 14px -4px #000;
+    -ms-box-shadow: 0 3px 14px -4px #000;
+    -moz-box-shadow: 0 3px 14px -4px #000;
+    -webkit-box-shadow: 0 3px 14px -4px #000;
+    box-shadow: 0 3px 14px -4px #000;
+}
